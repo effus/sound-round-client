@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["test"],{"5ca0":function(e,t,n){"use strict";n.r(t);var c=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",[e._v("Realtime connection with Socket.io")])},i=[],o=n("2877"),l={},a=Object(o["a"])(l,c,i,!1,null,null,null);t["default"]=a.exports}}]);
-//# sourceMappingURL=test.ababac10.js.map

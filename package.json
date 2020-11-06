@@ -1,0 +1,29 @@
+{
+  "name": "sound-round-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/effus/sound-round-client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/effus/sound-round-client/issues"
+  },
+  "homepage": "https://github.com/effus/sound-round-client#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "crypto": "^1.0.1",
+    "express-vue": "^5.15.1",
+    "vue": "^2.6.12",
+    "vuetify": "^2.3.16",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {}
+}

@@ -13,15 +13,15 @@
             <h2>Flags</h2>
             <div>User: {{$route.params.user}}</div>
             <div>isConnected: {{isConnected}}</div>
-            <div>
-                Messages: {{messages.length}}
-            </div>
+            <div>isDev: {{isDev}}</div>
+            <div>service: {{serviceUrl}}</div>
+            <div>Messages: {{messages.length}}</div>
             <ul>
                 <li v-for="item in messages" v-bind:key="item">
                     [ {{item.user}} ]: {{item.text}}
                 </li>
             </ul>
-            <div>
+            <div v-if="isConnected">
                 <input type="text" v-model="textToSend">
                 <button type="button" @click="sendMessage">Send</button>
             </div>
@@ -32,9 +32,13 @@
 <script>
 import io from 'socket.io-client';
 
+console.log(process.env);
+
 export default {
     data: () => {
         return {
+            isDev: process.env.VUE_APP_ENV === 'development',
+            serviceUrl: process.env.VUE_APP_SOCKET_SERVER,
             socket: null,
             isConnected: false,
             messages: [],
@@ -45,11 +49,10 @@ export default {
         if (!this.$route.params.user) {
             return;
         }
-        this.socket = io('http://localhost:3000', {
+        this.socket = io(this.serviceUrl, {
             reconnectionDelay: 1000,
             reconnection: true,
             reconnectionAttemps: 10,
-            //transports: ['websocket'],
             agent: false,
             upgrade: false,
             rejectUnauthorized: false

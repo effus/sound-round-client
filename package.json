@@ -4,6 +4,7 @@
   "description": "Express.js + Vue.js",
   "main": "index.js",
   "scripts": {
+    "build": "cd ./middle/ && npm install", 
     "start": "cd ./middle && node ./bin/www"
   },
   "repository": {

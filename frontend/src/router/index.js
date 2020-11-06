@@ -13,9 +13,9 @@ const routes = [
     component: IndexView
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import(/* webpackChunkName: "about" */ '../views/TheAboutView.vue')
+    path: '/test',
+    name: 'Test',
+    component: () => import(/* webpackChunkName: "test" */ '../views/TheTestView.vue')
   }
 ]
 

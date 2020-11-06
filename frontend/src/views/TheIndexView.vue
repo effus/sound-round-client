@@ -10,7 +10,7 @@
 </template>
 
 <script>
-//import axios from 'axios';
+import axios from 'axios';
 
 export default {
     data: () => {
@@ -20,10 +20,16 @@ export default {
     },
     methods: {
         onClickTest1() {
-            console.log('pressing');
+            axios.get('/tests/1')
+            .then((resp) => {
+                this.isTest1Ok = resp.data.success;
+            })
+            .catch((err) => {
+                console.error(err);
+            });
         },
         onClickTest2() {
-            this.$router.push({name: 'About'});
+            this.$router.push({name: 'Test'});
         }
     }
 }

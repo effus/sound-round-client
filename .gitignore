@@ -1,3 +1,5 @@
 node_modules
 middle/node_modules
 frontend/node_modules
+middle/public/*.js
+middle/public/*.css

@@ -36,7 +36,8 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('message', {
       user: payload.from,
       text: payload.text,
-      time: new Date()
+      time: new Date(),
+      note: payload.note
     });
   });
 });

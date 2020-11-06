@@ -12,4 +12,10 @@ router.get('/test', function(req, res, next) {
 router.get('/test/user/:userId', function(req, res, next) {
   res.sendFile(path.join(__dirname + '/../public/index.html'));
 });
+router.get('/test/midi', function(req, res, next) {
+  res.sendFile(path.join(__dirname + '/../public/index.html'));
+});
+router.get('/test/audio', function(req, res, next) {
+  res.sendFile(path.join(__dirname + '/../public/index.html'));
+});
 module.exports = router;

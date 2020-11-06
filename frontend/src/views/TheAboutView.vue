@@ -1,3 +1,3 @@
 <template>
-    <div>About</div>
+    <div>Realtime connection with Socket.io</div>
 </template>

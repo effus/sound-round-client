@@ -21,6 +21,16 @@ const routes = [
     path: '/test/user/:user',
     name: 'TestUser',
     component: () => import(/* webpackChunkName: "test" */ '../views/TheTestView.vue')
+  },
+  {
+    path: '/test/midi',
+    name: 'Midi',
+    component: () => import(/* webpackChunkName: "test" */ '../views/TheMidiView.vue')
+  },
+  {
+    path: '/test/audio',
+    name: 'Audio',
+    component: () => import(/* webpackChunkName: "test" */ '../views/TheAudioView.vue')
   }
 ]
 

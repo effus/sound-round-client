@@ -9,6 +9,10 @@
             <li>Check realtime events!</li>
         </ul>
 
+        <div v-if="messages.length > 0">
+            <a href="/test/midi">Well done! And at least say "hi" to MIDI in browser!</a>
+        </div>
+
         <div v-if="this.$route.params.user">
             <h2>Flags</h2>
             <div>User: {{$route.params.user}}</div>

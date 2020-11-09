@@ -1,10 +1,13 @@
 <template>
     <div>
-        <h1>Index</h1>
-        <button type="button" @click="onClickTest1">Oh! Sorry for distracting, I've just want 
-            to ask you to press this big ugly button to check that server-to-server connection 
-            is worked properly. Could you press?</button>
-        <button v-if="isTest1Ok" type="button" @click="onClickTest2">Yes. So, there are another button. Lets check realtime connection.</button>
+        <h1>SoundRound</h1>
+        <p>
+            I want to try connecting MIDI device to browser and play together with someone, using 
+            <a href="https://socket.io/">Socket.io</a> and <a href="https://www.w3.org/TR/webaudio/">WebAudio API</a>.
+        </p>
+        <p>
+            There are some <a href="/test">tests</a> to check how can we do it.
+        </p>
     </div>
     
 </template>

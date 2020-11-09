@@ -15,22 +15,22 @@ const routes = [
   {
     path: '/test',
     name: 'Test',
-    component: () => import(/* webpackChunkName: "test" */ '../views/TheTestView.vue')
+    component: () => import(/* webpackChunkName: "test" */ '../views/tests/TheTestView.vue')
   },
   {
     path: '/test/user/:user',
     name: 'TestUser',
-    component: () => import(/* webpackChunkName: "test" */ '../views/TheTestView.vue')
+    component: () => import(/* webpackChunkName: "test" */ '../views/tests/TheTestView.vue')
   },
   {
     path: '/test/midi',
     name: 'Midi',
-    component: () => import(/* webpackChunkName: "test" */ '../views/TheMidiView.vue')
+    component: () => import(/* webpackChunkName: "test" */ '../views/tests/TheMidiView.vue')
   },
   {
     path: '/test/audio',
     name: 'Audio',
-    component: () => import(/* webpackChunkName: "test" */ '../views/TheAudioView.vue')
+    component: () => import(/* webpackChunkName: "test" */ '../views/tests/TheAudioView.vue')
   }
 ]
 

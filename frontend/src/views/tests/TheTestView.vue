@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Realtime connection</h1>
+        <h1>Test 1. Realtime connection</h1>
 
         <ul>
             <li>You need 2 device/browsers/tabs</li>
@@ -16,7 +16,7 @@
         <div v-if="this.$route.params.user">
             <h2>Flags</h2>
             <div>User: {{$route.params.user}}</div>
-            <div>isConnected: {{isConnected}}</div>
+            <div>isConnected: <span class="badge" :class="{'badge-danger': !isConnected}">{{isConnected}}</span></div>
             <div>isDev: {{isDev}}</div>
             <div>service: {{serviceUrl}}</div>
             <div>Messages: {{messages.length}}</div>

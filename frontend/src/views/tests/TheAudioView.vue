@@ -62,6 +62,7 @@
             <li>
                 <span v-for="item in notes" v-bind:key="item">{{item}} </span> 
             </li>
+            <li>Open this page in second browser/device and you will hear notes that you playing (with some delay)</li>
         </ul>
     </div>
 </template>

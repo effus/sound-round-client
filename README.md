@@ -9,26 +9,26 @@ Express.js + Vue.js + Heroku
 ### Develop environment
 
 ```bash
-// Frontend
+## Frontend
 cd frontend && npm run build-dev
 
-// .. or `npm run serve` for frontend-only development
+## .. or `npm run serve` for frontend-only development
 
-// Middle (backend at now)
+## Middle (backend at now)
 cd middle && npm run start 
 
-// open http://localhost:3000/
+## open http://localhost:3000/
 ```
 
 ### Production
 
 ```bash
 
-// Frontend
+## Frontend
 cd frontend && npm run build
 
-// then git push and deploy to Heroku
-// To change production backend URL fix `./envs/env.prod` and rebuild front
+## then git push and deploy to Heroku
+## To change production backend URL fix `./envs/env.prod` and rebuild front
 ```
 
 Current service: https://sound-round.herokuapp.com
